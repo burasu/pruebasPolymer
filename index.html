@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Pruebas con Polymer</title>
+
+    <!-- Hay que llamar a Platform para que se encargue de "nivelar" las
+        capacidades de todos los navegadores  y de esta forma satisfacer la compatibilidad. -->
+    <script src="polymer/platform/platform.js"></script>
+
+    <!-- Ahora importamos un archivo .html. Este contiene el "elemento" que será
+        usado más adelante. -->
+    <link rel="import" href="src/hello-world.html" />
 </head>
 <body>
+
+    <!-- Aqui usamos el componente hello-world, su estilo y script están
+         encapsulados dentro de la carpeta src -->
+    <hello-world who="@burasu76"></hello-world>
+
 
 </body>
 </html>
