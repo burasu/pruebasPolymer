@@ -1,0 +1,23 @@
+<!-- Este archivo contiene nuestro elemento personalizado. Por lo tanto, aquí
+     importamos polymer en lugar de platform.  -->
+<link rel="import" href="../polymer/polymer/polymer.html" />
+
+<!-- Ésta es la descripción del elemento. Contiene el markup, del elemento.
+     sus estilos y el código necesario para que funcinoe correctamente.  -->
+<polymer-element name="hello-world" attributes="who">
+
+    <template>
+        <p>Hola <strong>{{who}}</strong>, bienvenido a Polymer!!!</p>
+    </template>
+
+    <script>
+        /* Necesitamos incluir la sentencia:
+         Polymer({}); para "activar nuestro elemento; en este caso,
+         enviamos "who" como parámetro. Es posible enviar lo que deseemos. */
+        Polymer('hello-world', {
+            who: '@burasu76'
+        });
+    </script>
+
+
+</polymer-element>
